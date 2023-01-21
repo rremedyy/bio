@@ -1,0 +1,138 @@
+body {
+    margin: 0px;
+    background-color: #0e0e0e;
+}
+
+.panel {
+    background-color: #111111e7;
+    width: 360px;
+    height: 270px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.07), 
+                0 2px 4px rgba(0,0,0,0.07), 
+                0 4px 8px rgba(0,0,0,0.07), 
+                0 8px 16px rgba(0,0,0,0.07),
+                0 16px 32px rgba(0,0,0,0.07), 
+                0 32px 64px rgba(0,0,0,0.07);
+}
+
+.title {
+    position: relative;
+    color: aliceblue;
+    font-family: "Arial";
+    font-weight: Bold;
+    font-size: 15px;
+    width: 50%;
+    left: 50%;
+    top: 19%;
+    overflow: hidden;
+    /* transform: rotate(-90deg); */
+}
+
+.logo {
+    width: 26%;
+    height: 35%;
+    left: 53px;
+    top: 45px;
+    opacity: 80%;
+    position: absolute;
+    border-radius: 20%;
+    box-shadow: 0px .7px 30px #64646437;
+    object-fit: cover;
+}
+
+.buttons {
+    width: 77%;
+    height: 15%;
+    position: absolute;
+    top: 65%;
+    left: 35%;
+}
+
+@keyframes hover-anim{
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(0.9);
+        opacity: 0.5;
+    }
+}
+
+@keyframes unhover-anim{
+    from {
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes click-anim{
+    from {
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+@keyframes scale-down {
+    from {
+        transform: scale(0.9);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+.style-button {
+    width: 16.25%;
+    height: 112.5%;
+    border-radius: 10px 10px 10px 10px;
+    animation: scale-down 0.5s forwards;
+    border: none;
+    margin-right: 4px;
+    margin-left: 4px;
+    box-shadow: 0px 15px 20px #0e0e0e;
+    background-color: #0f0f10;
+}
+
+.producer-text {
+    font-family: Descfont;
+    font-size: 15px;
+    color: #f0f0f0;
+}
+
+.worlds-text{
+    font-family: Notosandsjap;
+    font-size: 14px;
+    font-weight: 1000;
+    color: #f0f0f0;
+}
+
+.style-button:hover {
+    animation: hover-anim 0.2s forwards;
+    cursor: pointer;
+}
+
+.style-button:active {
+    animation: click-anim 0.2s forwards;
+}
+
+.button-icon {
+    width: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@font-face {
+    font-family: Titlefont;
+    src: url(fonts/LexendPeta-SemiBold.ttf);
+}
