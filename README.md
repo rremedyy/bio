@@ -1,1 +1,1 @@
-**just a bit of a website**
+**just a quick project cause i was bored**
